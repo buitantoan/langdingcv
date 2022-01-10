@@ -1,1 +1,1 @@
-# langdingcv.github.io
+# https://buitantoan.github.io/langdingpage
