@@ -1,1 +1,2 @@
-# https://buitantoan.github.io/langdingpage
+# Link github
+* https://buitantoan.github.io/langdingpage
