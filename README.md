@@ -1,2 +1,2 @@
 # Link github
-* https://buitantoan.github.io/langdingpage
+* `https://buitantoan.github.io/langdingpage`
