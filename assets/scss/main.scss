@@ -1,11 +1,12 @@
 *,
-html{
+html {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -14,3 +15,185 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+.wd-container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wd-nav-menu-main {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        .menu-item {
+            margin-left: 30px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                text-decoration: none;
+                padding: 15px 0;
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 175%;
+                font-family: 'Helvetica Neue', serif;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #F7E406;
+                }
+            }
+        }
+    }
+
+    .wd-menu-icon {
+        display: none;
+
+        .wd-icon {
+            font-size: 25px;
+        }
+
+        i {
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+            width: 1em;
+            height: 1em;
+            position: relative;
+            display: inline-block;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .wd-menu {
+            display: none;
+        }
+
+        .wd-menu-icon {
+            display: block;
+        }
+    }
+}
+
+.wd-nav-menu-popup {
+    display: none;
+}
+
+.wd-header-section {
+    background-color: #070707;
+    line-height: 1;
+
+    .wd-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wd-logo {
+            img {
+                display: block;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.wd-hero-section {
+    .wd-container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+// Slide
+.wd-swiper-wrap {
+    overflow: hidden;
+    padding-bottom: 40px;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            list-style: 0;
+
+            .thumbnal {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .content {
+                padding: 24px;
+                border-radius: 30px;
+                min-width: 300px;
+                width: 740px;
+                min-height: 360px;
+                background-color: #FFFFFF70;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .text-box{
+                    h3{
+                        margin: 0 0 20px;
+                        font-size: 70px;
+                        line-height: 150%;
+                        font-family: 'Helvetica Neue', serif;
+                    }
+                    .description{
+                        font-size: 30px;
+                        font-family: 'Helvetica Neue', serif;
+                        line-height: 150%;
+                        font-weight: 600;
+                    }
+                    .btn-cta{
+                        margin-top: 20px;
+                        display: inline-block;
+                        border-radius: 4px;
+                        padding: 16px 30px;
+                        min-width: 230px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        font-family: 'Helvetica Neue', serif;
+                        line-height: 26px;
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                        background-color: #D59578;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        .swiper-pagination-bullet {
+            margin: 4px;
+        }
+    }
+}
