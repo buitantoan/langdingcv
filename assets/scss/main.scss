@@ -15,11 +15,46 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    line-height: 150%;
+    color: inherit;
+}
+
+.wd-main {
+    overflow: hidden;
+}
+
+section {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wd-container-full {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .wd-container {
     max-width: 1230px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
 }
 
 .wd-nav-menu-main {
@@ -101,17 +136,55 @@ body {
         .wd-logo {
             img {
                 display: block;
-                max-width: 100%;
                 object-fit: cover;
             }
         }
     }
 }
 
+.wd-heading {
+    color: #FFFFFF;
+    line-height: 1.3em;
+    font-size: 50px;
+}
+
+.wd-description {
+    color: #FFFFFF;
+    line-height: 1.8em;
+    font-size: 18px;
+}
+
 .wd-hero-section {
     .wd-container {
         max-width: 100%;
         padding: 0;
+    }
+}
+
+.wd-introduction-section {
+    padding: 100px 0;
+    background-color: #12141D;
+
+    .wd-wrapper {
+        display: flex;
+
+        .wd-image-box {
+            overflow: hidden;
+            width: 50%;
+
+            iframe {
+                border: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .wd-text-box {
+            width: 50%;
+            max-width: 600px;
+            margin: 50px;
+        }
     }
 }
 
@@ -122,16 +195,19 @@ body {
 
     .swiper-wrapper {
         .swiper-slide {
+            height: 600px;
             background: transparent;
+
             .swiper-slide-inner {
                 width: 100%;
+
                 .swiper-slide-thumbnail {
                     position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    &::before{
+                    &::before {
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -151,19 +227,21 @@ body {
                 }
 
                 .swiper-slide-content {
-                    padding: 30px;
-                    border-radius: 30px;
-                    max-width: 1230px;
-                    min-width: 700px;
+                    padding: 40px;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    position: absolute;
-                    top: calc(50% - 30px);
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    flex-direction: column;
 
                     .swiper-slide-text-box {
+                        width: 80%;
+                        margin: 0 auto;
+
                         .swiper-slide-heading {
                             margin: 0 0 20px;
                             font-size: 60px;
@@ -196,7 +274,8 @@ body {
                             text-transform: uppercase;
                             background-color: #FFFFFF30;
                             transition: all 0.3s ease;
-                            &:hover{
+
+                            &:hover {
                                 background-color: #D59578;
                                 border-color: #D59578;
                             }
@@ -207,10 +286,12 @@ body {
 
         }
     }
-    .swiper-button{
+
+    .swiper-button {
         width: 36px;
         height: 36px;
     }
+
     .swiper-pagination {
         right: 32px;
         bottom: 32px;
@@ -222,7 +303,8 @@ body {
             height: 12px;
             background-color: #FFFFFF;
             opacity: 0.4;
-            &.swiper-pagination-bullet-active{
+
+            &.swiper-pagination-bullet-active {
                 background-color: #F64D52;
                 opacity: 1;
             }
