@@ -10,12 +10,14 @@
       href="assets/images/wedding-logo-min.png"
     >
     <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/js/popup/magnific-popup.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/font-awesome-4.7.0.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/jquery-migrate-3.3.2.min.js"></script>
     <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/popup/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 <body>
@@ -59,7 +61,7 @@
         <div class="wd-main-wrap">
             <section id="wd-hero-section" class="wd-hero-section">
                 <div class="wd-container">
-                    <div class="wd-swiper-wrap swiper">
+                    <div class="wd-swiper-wrap wd-swiper-hero swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-slide-inner">
@@ -134,9 +136,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button swiper-button-next"></div>
-                        <div class="swiper-button swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button swiper-button-next swiper-button-next-hero">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="swiper-button swiper-button-prev swiper-button-prev-hero">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination--hero"></div>
                     </div>
                 </div>
             </section>
@@ -144,8 +150,9 @@
                 <div class="wd-container-full">
                     <div class="wd-wrapper">
                         <div class="wd-image-box">
-                            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                            </iframe>                            
+                            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe> -->
+                            <img src="assets/images/wd-cover-img-01-min.png" alt="img">                            
                         </div>
                         <div class="wd-text-box">
                             <h2 class="wd-heading">Giới Thiệu</h2>
@@ -163,7 +170,94 @@
             </section>
             <section id="wd-services-section" class="wd-services-section">
                 <div class="wd-container">
-                    <h2>This is my services</h2>
+                    <div class="wd-services-wrap wd-services-image">
+                        <div class="wd-heading-box">
+                            <h2 class="wd-heading">Khoảnh Khắc Phóng Sự</h2>
+                            <p class="wd-description">
+                                JWedding là nơi lưu giữa những khoảnh khắc góp phần cho hành trình tìm đến nhau của hai nữa trái tim.
+                            </p>
+                        </div>
+                        <div class="wd-popup-gallery wd-image-gallery">
+                            <a href="assets/images/wd-cover-img-min.jpg"  title="The Cleaner">
+                                <img src="assets/images/wd-cover-img-min.jpg" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-01-min.png"  title="Winter Dance">
+                                <img src="assets/images/wd-cover-img-01-min.png" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-min.jpg"  title="The Uninvited Guest">
+                                <img src="assets/images/wd-cover-img-min.jpg" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-01-min.png"  title="Oh no, not again!">
+                                <img src="assets/images/wd-cover-img-01-min.png" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-min.jpg"  title="Swan Lake">
+                                <img src="assets/images/wd-cover-img-min.jpg" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-01-min.png"  title="The Shake">
+                                <img src="assets/images/wd-cover-img-01-min.png" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-min.jpg"  title="The Uninvited Guest">
+                                <img src="assets/images/wd-cover-img-min.jpg" width="150" height="150" alt="">
+                            </a>
+                            <a href="assets/images/wd-cover-img-01-min.png"  title="The Shake">
+                                <img src="assets/images/wd-cover-img-01-min.png" width="150" height="150" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wd-services-wrap wd-services-video">
+                        <div class="wd-heading-box">
+                            <h2 class="wd-heading">Video Phóng Sự Mới Nhất</h2>
+                            <p class="wd-description">
+                                Một số video mới nhất mà JWedding đã thực hiện cho một số cặp đôi vừa qua. 
+                            </p>
+                        </div>
+                        <div class="wd-swiper-wrap wd-swiper-video swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <a class="popup-video" href="https://www.youtube.com/watch?v=tgbNymZ7vqY">
+                                            <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <a class="popup-video" href="http://www.youtube.com/watch?v=0O2aH4XLbto" >
+                                            <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <a class="popup-video" href="https://www.lightgalleryjs.com/videos/video2.mp4"  >
+                                            <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <a class="popup-video" href="https://www.lightgalleryjs.com/videos/video2.mp4"  >
+                                            <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <a class="popup-video" href="assets/videos/video-animal.mp4" >
+                                            <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button swiper-button-next swiper-button-next-video">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="swiper-button swiper-button-prev swiper-button-prev-video">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination--video"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="wd-payment-section" class="wd-payment-section">
