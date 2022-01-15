@@ -42,7 +42,23 @@
       let swiperVideo = new Swiper(swiper_video, swiper_video_data);
     }
 
+    function payment_swiper_slide() {
+      let swiper_payment = $('.wd-payment-wrap'); 
+      let swiper_payment_data = {
+          spaceBetween: 30,
+          slidesPerView: 3,
+          pagination: {
+            el: ".swiper-pagination--payment",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-payment",
+            prevEl: ".swiper-button-prev-payment",
+          },
+      };
 
+      let swiperPayment = new Swiper(swiper_payment, swiper_payment_data);
+    }
 
     function services_image_gallery() {
       $('.wd-services-image .wd-image-gallery').magnificPopup({
@@ -67,8 +83,14 @@
     $(document).ready(function () {
 
         var navMenu = $('.wd-menu');
-        navMenu.on('click', '.menu-item a', function (e) {
-          console.log($(this)); 
+        navMenu.on('click', '.menu-item a', function (event) {
+          event.preventDefault();
+          let id_link =  $(this).attr('href');
+          navMenu.find('a').removeClass('active');
+          $(this).addClass('active');        
+          $('html, body').animate({
+            scrollTop: (parseInt($(id_link).offset().top)) - 80
+          }, 1000);
         });
 
         hero_swiper_slide();
@@ -76,6 +98,8 @@
         services_image_gallery();
 
         services_video_swiper_slide();
+
+        payment_swiper_slide();
 
         $('.wd-swiper-video .popup-video').magnificPopup({
           disableOn: 700,
