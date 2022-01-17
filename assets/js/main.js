@@ -28,7 +28,16 @@
       let swiper_video = $('.wd-swiper-video'); 
       let swiper_video_data = {
           spaceBetween: 30,
-          slidesPerView: 3,
+          slidesPerView: 1,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
           pagination: {
             el: ".swiper-pagination--video",
             clickable: true,
@@ -46,7 +55,16 @@
       let swiper_payment = $('.wd-payment-wrap'); 
       let swiper_payment_data = {
           spaceBetween: 30,
-          slidesPerView: 3,
+          slidesPerView: 1,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
           pagination: {
             el: ".swiper-pagination--payment",
             clickable: true,
@@ -58,6 +76,34 @@
       };
 
       let swiperPayment = new Swiper(swiper_payment, swiper_payment_data);
+    }
+
+    function teams_swiper_slide() {
+      let swiper_teams = $('.wd-teams-wrap'); 
+      let swiper_teams_data = {
+          spaceBetween: 30,
+          slidesPerView: 1,
+          loop: true,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
+          pagination: {
+            el: ".swiper-pagination--teams",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-teams",
+            prevEl: ".swiper-button-prev-teams",
+          },
+      };
+
+      let swiperTeams = new Swiper(swiper_teams, swiper_teams_data);
     }
 
     function services_image_gallery() {
@@ -100,6 +146,8 @@
         services_video_swiper_slide();
 
         payment_swiper_slide();
+
+        teams_swiper_slide();
 
         $('.wd-swiper-video .popup-video').magnificPopup({
           disableOn: 700,
