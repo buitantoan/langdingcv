@@ -471,6 +471,19 @@ img {
             margin: 50px;
         }
     }
+    @media(max-width: 767.98px){
+        .wd-wrapper {
+            flex-direction: column;
+            .wd-image-box { 
+                width: 100%;
+            }
+            .wd-text-box {
+                width: 100%;
+                margin: 0 auto;
+                padding: 30px 15px 0;
+            }
+        }
+    }
 }
 
 .wd-services-section {
