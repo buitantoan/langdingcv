@@ -50,7 +50,7 @@
                     </li>
                 </ul>
                 <div class="wd-menu-icon">
-                    <a class="wd-icon" href="#">
+                    <a class="wd-icon btn-menu-icon" href="#">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -149,11 +149,6 @@
             <section id="wd-introduction-section" class="wd-introduction-section">
                 <div class="wd-container-full">
                     <div class="wd-wrapper">
-                        <div class="wd-image-box">
-                            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                            </iframe> -->
-                            <img src="assets/images/wd-cover-img-01-min.png" alt="img">                            
-                        </div>
                         <div class="wd-text-box">
                             <h2 class="wd-heading">Giới Thiệu</h2>
                             <div class="wd-description">
@@ -164,6 +159,11 @@
                                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </div>
+                        </div>
+                        <div class="wd-image-box">
+                            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe> -->
+                            <img src="assets/images/wd-cover-img-01-min.png" alt="img">                            
                         </div>
                     </div>
                 </div>
@@ -215,28 +215,28 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="swiper-slide-inner">
-                                        <a class="popup-video" href="https://www.youtube.com/watch?v=tgbNymZ7vqY">
+                                        <a class="popup-video" href="assets/videos/video-animal.mp4">
                                             <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-slide-inner">
-                                        <a class="popup-video" href="http://www.youtube.com/watch?v=0O2aH4XLbto" >
+                                        <a class="popup-video" href="assets/videos/video-animal.mp4" >
                                             <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-slide-inner">
-                                        <a class="popup-video" href="https://www.lightgalleryjs.com/videos/video2.mp4"  >
+                                        <a class="popup-video" href="assets/videos/video-animal.mp4"  >
                                             <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-slide-inner">
-                                        <a class="popup-video" href="https://www.lightgalleryjs.com/videos/video2.mp4"  >
+                                        <a class="popup-video" href="assets/videos/video-animal.mp4"  >
                                             <img src="assets/images/wd-video-placeholder-img-min.png" width="150" height="150" alt="">
                                         </a>
                                     </div>
@@ -474,12 +474,13 @@
             </div>
         </div>
     </footer>
-    <div class="wd-nav-menu-popup">
-        <div class="wd-nav-menu-mobile">
-            <nav class="wd-nav-menu-main ">
+    <div id="wd-menu-mobile" class="wd-nav-menu-mobile white-popup mfp-hide">
+        <div class="wd-menu-mobile-wrap">
+            <nav class="wd-nav-menu-main">
+                <h3>Menu</h3>
                 <ul class="wd-menu-mobile">
                     <li class="menu-item">
-                        <a href="#wd-hero-section">Trang Chủ</a>
+                        <a class="active" href="#wd-hero-section">Trang Chủ</a>
                     </li>
                     <li class="menu-item">
                         <a href="#wd-introduction-section">Giới Thiệu</a>
@@ -500,5 +501,6 @@
             </nav>
         </div>
     </div>
+
 </body>
 </html>
