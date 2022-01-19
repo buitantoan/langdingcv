@@ -77,13 +77,12 @@ img {
                 font-family: 'Helvetica Neue', serif;
                 transition: all 0.3s;
 
-                &.active {
-                    color: #F7E406;
-                }
-
                 &:hover {
                     color: #F7E406;
                 }
+            }
+            .active {
+                color: #F7E406;
             }
         }
     }
@@ -106,7 +105,7 @@ img {
     }
 
     @media(max-width: 1024px) {
-        .wd-menu {
+        .menu-main {
             display: none;
         }
 
@@ -215,6 +214,18 @@ img {
                         color: #FFFFFF90;
                         font-size: 20px;
                         line-height: 1.75;
+                        i {
+                            margin-right: 4px;
+                            width: 1em;
+                            height: 1em;
+                            line-height: 1;
+                            display: inline-block;
+                        }
+                    }
+                    @media(max-width: 767.98px){
+                        a{
+                            font-size: 18px;
+                        }
                     }
                 }
             }
@@ -248,11 +259,18 @@ img {
                         width: 1em;
                         height: 1em;
                         display: block;
-                        list-style: 1;
+                        line-height: 1;
                     }
 
                     &:hover {
                         background-color: #d8d8d8;
+                    }
+                }
+            }
+            @media(max-width: 767.98px){
+                .wd-social-item{
+                    a{
+                        font-size: 16px;
                     }
                 }
             }
@@ -275,6 +293,13 @@ img {
             color: #FFFFFF80;
             font-size: 18px;
             line-height: 1.56em;
+        }
+
+        @media(max-width: 767.98px){
+            .wd-copyright,
+            .wd-address{
+                font-size: 16px;
+            }
         }
     }
 }
@@ -416,6 +441,7 @@ img {
 
             .swiper-button {
                 visibility: hidden;
+                transition: all 0.3s ease;
             }
 
             &:hover {
@@ -569,7 +595,7 @@ img {
             .wd-text-box {
                 width: 100%;
                 margin: 0 auto;
-                padding-bottom: 30px;
+                padding: 0 15px 40px;
             }
         }
     }
@@ -629,7 +655,7 @@ img {
     }
 
     @media(max-width: 767.98px) {
-        padding: 60px 0;
+        padding: 60px 0 30px;
 
         .wd-services-wrap {
             .wd-popup-gallery {
@@ -695,7 +721,7 @@ img {
                         font-size: 24px;
                         font-weight: 700;
                         color: #FFFFFF;
-                        list-style: 125%;
+                        line-height: 125%;
                         text-transform: capitalize;
                     }
 
@@ -718,6 +744,25 @@ img {
     @media(max-width: 1024.98px){
         padding: 80px 0;
     }
+
+    @media(max-width: 767.98px){
+        padding: 60px 0;
+        .wd-teams-wrap {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .swiper-slide-content{
+                        .swiper-slide-name{
+                            font-size: 20px;
+                        }
+                        .swiper-slie-job{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .wd-contact-section {
@@ -751,10 +796,10 @@ img {
                 font-size: 24px;
                 line-height: 1.75;
                 i {
-                    margin-right: 6px;
+                    margin-right: 4px;
                     width: 1em;
                     height: 1em;
-                    list-style: 1;
+                    line-height: 1;
                     display: inline-block;
                 }
             }
@@ -769,6 +814,27 @@ img {
     
     @media(max-width: 1024.98px){
         padding: 80px 0;
+        .wd-contact-wrap{
+            .wd-contact {
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 767.98px){
+        .wd-contact-wrap{
+            padding: 30px 24px;
+            .wd-contact {
+                a {
+                    font-size: 18px;
+                }
+            }
+            .wd-address{
+                font-size: 18px;
+            }
+        }
     }
 }
 

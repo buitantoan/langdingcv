@@ -126,88 +126,95 @@
       });
     }
 
+    function smooth_scroll(menu) {
+
+      let heightHeader = $('.wd-header-section').outerHeight();
+
+      $(window).scroll(function(){
+            
+        let scrollTop = $(document).scrollTop();
+        if (scrollTop === 0)
+        {
+            $('a[href^="#wd-hero-section"]').addClass('active');
+            return;
+        }
+        menu.each(function (index) {
+          let currLink = $(this.hash);
+          let refElement = currLink.position().top;
+          let linkHeight = currLink.outerHeight();
+  
+          if (refElement - heightHeader <= scrollTop && refElement + linkHeight - heightHeader > scrollTop) {
+            menu.removeClass("active");
+            $(this).addClass("active");
+          }
+          else{
+            $(this).removeClass("active");
+          }
+        });
+
+      });
+
+      menu.on('click', function (event) {
+        event.preventDefault();
+        let id_link =  $(this).attr('href');  
+        $('html, body').animate({
+          scrollTop: (parseInt($(id_link).offset().top)) - heightHeader
+        }, 1000);
+        $.magnificPopup.close();
+      });
+
+    }
+
     $(document).ready(function () {
 
-        // $(window).scroll(function(){
-            
-        //   let scrollTop = $(window).scrollTop();
-        //   let heightHeader = $('.wd-header-section');
-        //   $('.wd-nav-menu-main .menu-item a').each(function (index) {
-        //     let currLink = $(this.hash);
-        //     let refElement = currLink.position().top;
-        //     let linkHeight = currLink.outerHeight();
-        //     console.log(linkHeight);
-        //     if (refElement - 120 <= scrollTop && refElement + linkHeight - 120 > scrollTop) {
-        //       $('.wd-nav-menu-main .menu-item a').removeClass("active");
-        //       $(this).addClass("active");
-        //     }
-        //     else{
-        //       $(this).removeClass("active");
-        //     }
-        //   });
-
-        // });
-
-        $('.wd-nav-menu-main').on('click', '.menu-item a', function (event) {
-          event.preventDefault();
-          let id_link =  $(this).attr('href');  
-          $('.wd-nav-menu-main .menu-item a').removeClass('active');
-          $(this).addClass('active');  
-          $('html, body').animate({
-            scrollTop: (parseInt($(id_link).offset().top)) - 80
-          }, 1000);
-          $.magnificPopup.close();
-        });
+      var menuMain = $('.menu-main .menu-item a');
+      var menuMainMobile = $('.menu-main-mobile .menu-item a');
+      smooth_scroll(menuMain);
+      smooth_scroll(menuMainMobile);
 
 
+      hero_swiper_slide();
 
-        hero_swiper_slide();
+      services_image_gallery();
 
-        services_image_gallery();
+      services_video_swiper_slide();
 
-        services_video_swiper_slide();
+      payment_swiper_slide();
 
-        payment_swiper_slide();
+      teams_swiper_slide();
 
-        teams_swiper_slide();
-
-        $('.wd-swiper-video .popup-video').magnificPopup({
-          disableOn: 700,
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-          iframe:{
-            patterns: {
-              youtube: {
-                index: 'youtube.com/',
-                id: 'v=', 
-                src: '//www.youtube.com/embed/%id%?autoplay=1'
-              },
-              vimeo: {
-                index: 'vimeo.com/',
-                id: '/',
-                src: '//player.vimeo.com/video/%id%?autoplay=1'
-              },
-              gmaps: {
-                index: '//maps.google.',
-                src: '%id%&output=embed'
-              }
-          
+      $('.wd-swiper-video .popup-video').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        iframe:{
+          patterns: {
+            youtube: {
+              index: 'youtube.com/',
+              id: 'v=', 
+              src: '//www.youtube.com/embed/%id%?autoplay=1'
             },
+            vimeo: {
+              index: 'vimeo.com/',
+              id: '/',
+              src: '//player.vimeo.com/video/%id%?autoplay=1'
+            },
+        
           },
-          fixedContentPos: false,
-        });
+        },
+        fixedContentPos: false,
+      });
 
-        $('.wd-menu-icon .btn-menu-icon').magnificPopup({
-          items: {
-            src: '#wd-menu-mobile',
-            type: 'inline'
-          },
-          removalDelay: 300,
-          mainClass: 'mfp-fade wd-popup-menu-mobile',
+      $('.wd-menu-icon .btn-menu-icon').magnificPopup({
+        items: {
+          src: '#wd-menu-mobile',
+          type: 'inline'
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-fade wd-popup-menu-mobile',
 
-        });
+      });
 
     });
 
