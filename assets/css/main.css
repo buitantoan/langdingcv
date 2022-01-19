@@ -35,12 +35,13 @@ img { display: inline-block; height: auto; max-width: 100%; }
 .wd-popup-menu-mobile .wd-nav-menu-mobile .wd-menu-mobile-wrap .wd-nav-menu-main ul .menu-item a { display: block; padding: 10px 0; line-height: 1.5; }
 .wd-popup-menu-mobile .wd-nav-menu-mobile .mfp-close { color: #FFFFFF; font-size: 30px; }
 
-.wd-header-section { background-color: #070707; line-height: 1; box-shadow: 0px 1px 0px #191919; position: sticky; top: 0; left: 0; width: 100%; z-index: 99; }
+.wd-header-section { background-color: #070707; line-height: 1; box-shadow: 0px 1px 0px #191919; position: sticky; top: 0; left: 0; width: 100%; z-index: 99; padding-top: 10px; padding-bottom: 10px; }
 .wd-header-section .wd-container { display: flex; align-items: center; justify-content: space-between; }
-.wd-header-section .wd-container .wd-logo img { display: block; object-fit: cover; }
+.wd-header-section .wd-container .wd-logo img { display: block; object-fit: cover; width: auto; height: 70px; }
 
 .wd-footer-section { background-color: #070707; padding: 50px 0 0; }
 .wd-footer-section .wd-footer-wrap { text-align: center; max-width: 860px; margin: 0 auto; padding-bottom: 30px; }
+.wd-footer-section .wd-footer-wrap .wd-logo { margin-bottom: 16px; }
 .wd-footer-section .wd-footer-wrap .wd-infomation-inner .wd-infomation { margin-bottom: 20px; }
 .wd-footer-section .wd-footer-wrap .wd-infomation-inner .wd-infomation .label { color: #FFFFFF; font-size: 20px; }
 .wd-footer-section .wd-footer-wrap .wd-infomation-inner .wd-infomation .wd-contact a { display: block; text-decoration: none; color: #FFFFFF90; font-size: 20px; line-height: 1.75; }

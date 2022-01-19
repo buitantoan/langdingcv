@@ -173,6 +173,8 @@ img {
     left: 0;
     width: 100%;
     z-index: 99;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     .wd-container {
         display: flex;
@@ -183,6 +185,8 @@ img {
             img {
                 display: block;
                 object-fit: cover;
+                width: auto;
+                height: 70px;
             }
         }
     }
@@ -198,6 +202,9 @@ img {
         margin: 0 auto;
         padding-bottom: 30px;
 
+        .wd-logo{
+            margin-bottom: 16px;
+        }
         .wd-infomation-inner {
             .wd-infomation {
                 margin-bottom: 20px;
