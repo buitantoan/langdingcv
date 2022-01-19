@@ -132,7 +132,7 @@
 
       $(window).scroll(function(){
             
-        let scrollTop = $(document).scrollTop();
+        let scrollTop = $(document).scrollTop() + 2;
         if (scrollTop === 0)
         {
             $('a[href^="#wd-hero-section"]').addClass('active');
