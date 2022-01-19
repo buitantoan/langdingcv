@@ -4,6 +4,8 @@ body { margin: 0; padding: 0; font-family: "Helvetica Neue", Arial, "Noto Sans",
 
 h1, h2, h3, h4, h5, h6 { margin-top: 0.5rem; margin-bottom: 1rem; font-family: inherit; line-height: 150%; color: inherit; }
 
+div, p { font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
 .wd-main { overflow: hidden; }
 
 section { position: relative; overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box; }
