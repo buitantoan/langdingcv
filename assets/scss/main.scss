@@ -259,7 +259,7 @@ img {
                     font-size: 18px;
                     -webkit-border-radius: 50%;
                     border-radius: 50%;
-                    color: #F96328;
+                    color: #186CB0;
                     transition: all 0.3s;
 
                     i {
@@ -267,6 +267,12 @@ img {
                         height: 1em;
                         display: block;
                         line-height: 1;
+                    }
+
+                    img{
+                        width: 1em;
+                        height: 1em;
+                        display: block;
                     }
 
                     &:hover {

@@ -49,8 +49,9 @@ img { display: inline-block; height: auto; max-width: 100%; }
 @media (max-width: 767.98px) { .wd-footer-section .wd-footer-wrap .wd-infomation-inner .wd-infomation .wd-contact a { font-size: 18px; } }
 .wd-footer-section .wd-footer-wrap .wd-socials { margin: 0; list-style: none; display: flex; align-items: center; justify-content: center; padding: 0; }
 .wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item { margin: 4px 8px; }
-.wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a { text-decoration: none; display: flex; align-items: center; justify-content: center; background-color: #FFFFFF; padding: 0.8em; font-size: 18px; -webkit-border-radius: 50%; border-radius: 50%; color: #F96328; transition: all 0.3s; }
+.wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a { text-decoration: none; display: flex; align-items: center; justify-content: center; background-color: #FFFFFF; padding: 0.8em; font-size: 18px; -webkit-border-radius: 50%; border-radius: 50%; color: #186CB0; transition: all 0.3s; }
 .wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a i { width: 1em; height: 1em; display: block; line-height: 1; }
+.wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a img { width: 1em; height: 1em; display: block; }
 .wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a:hover { background-color: #d8d8d8; }
 @media (max-width: 767.98px) { .wd-footer-section .wd-footer-wrap .wd-socials .wd-social-item a { font-size: 16px; } }
 .wd-footer-section .wd-footer-copyright { text-align: center; padding: 30px 0; box-shadow: inset 0px 1px 0px #2c2c2c; }
