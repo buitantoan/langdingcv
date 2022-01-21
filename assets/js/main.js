@@ -1,129 +1,12 @@
 ( function( $ ) {
 
-    function hero_swiper_slide() {
-      let swiper_hero = $('.wd-swiper-hero'); 
-      let swiper_herro_data = {
-          spaceBetween: 30,
-          slidesPerView: 1,
-          centeredSlides: true,
-          loop: true,
-          autoplay: {
-              delay: 3000,
-              disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination--hero",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next-hero",
-            prevEl: ".swiper-button-prev-hero",
-          },
-      };
 
-      let swiperHandle = new Swiper(swiper_hero, swiper_herro_data);
+    function wd_magnific_popup(element, magnific_option) {
+      element.magnificPopup(magnific_option);
     }
 
-    function services_video_swiper_slide() {
-      let swiper_video = $('.wd-swiper-video'); 
-      let swiper_video_data = {
-          spaceBetween: 30,
-          slidesPerView: 1,
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1025: {
-              slidesPerView: 3,
-            },
-          },
-          pagination: {
-            el: ".swiper-pagination--video",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next-video",
-            prevEl: ".swiper-button-prev-video",
-          },
-      };
-
-      let swiperVideo = new Swiper(swiper_video, swiper_video_data);
-    }
-
-    function payment_swiper_slide() {
-      let swiper_payment = $('.wd-payment-wrap'); 
-      let swiper_payment_data = {
-          spaceBetween: 30,
-          slidesPerView: 1,
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1025: {
-              slidesPerView: 3,
-            },
-          },
-          pagination: {
-            el: ".swiper-pagination--payment",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next-payment",
-            prevEl: ".swiper-button-prev-payment",
-          },
-      };
-
-      let swiperPayment = new Swiper(swiper_payment, swiper_payment_data);
-    }
-
-    function teams_swiper_slide() {
-      let swiper_teams = $('.wd-teams-wrap'); 
-      let swiper_teams_data = {
-          spaceBetween: 30,
-          slidesPerView: 1,
-          loop: true,
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1025: {
-              slidesPerView: 3,
-            },
-          },
-          pagination: {
-            el: ".swiper-pagination--teams",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next-teams",
-            prevEl: ".swiper-button-prev-teams",
-          },
-      };
-
-      let swiperTeams = new Swiper(swiper_teams, swiper_teams_data);
-    }
-
-    function services_image_gallery() {
-      $('.wd-services-image .wd-image-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0,2], 
-        },
-        image: {
-          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-          titleSrc: function(item) {
-            return item.el.attr('title') + '<small>by JWedding</small>';
-          }
-        }
-      });
+    function wd_swiper_slider(element, swiper_option) {
+      let swiper = new Swiper(element, swiper_option);
     }
 
     function smooth_scroll(menu) {
@@ -172,18 +55,127 @@
       smooth_scroll(menuMain);
       smooth_scroll(menuMainMobile);
 
+      var swiper_hero = $('.wd-swiper-hero'); 
+      var swiper_herro_data = {
+          spaceBetween: 0,
+          slidesPerView: 1,
+          centeredSlides: true,
+          loop: true,
+          speed: 1200,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination--hero",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-hero",
+            prevEl: ".swiper-button-prev-hero",
+          },
+      };
 
-      hero_swiper_slide();
+      wd_swiper_slider(swiper_hero,swiper_herro_data);
+      
+      var swiper_video = $('.wd-swiper-video'); 
+      var swiper_video_data = {
+          spaceBetween: 30,
+          slidesPerView: 1,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
+          pagination: {
+            el: ".swiper-pagination--video",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-video",
+            prevEl: ".swiper-button-prev-video",
+          },
+      };
 
-      services_image_gallery();
+      wd_swiper_slider(swiper_video, swiper_video_data);
 
-      services_video_swiper_slide();
+      var swiper_payment = $('.wd-payment-wrap'); 
+      var swiper_payment_data = {
+          spaceBetween: 30,
+          slidesPerView: 1,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
+          pagination: {
+            el: ".swiper-pagination--payment",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-payment",
+            prevEl: ".swiper-button-prev-payment",
+          },
+      };
 
-      payment_swiper_slide();
+      wd_swiper_slider(swiper_payment, swiper_payment_data);
 
-      teams_swiper_slide();
+      var swiper_teams = $('.wd-teams-wrap'); 
+      var swiper_teams_data = {
+          spaceBetween: 30,
+          slidesPerView: 1,
+          loop: true,
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 3,
+            },
+          },
+          pagination: {
+            el: ".swiper-pagination--teams",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-teams",
+            prevEl: ".swiper-button-prev-teams",
+          },
+      };
 
-      $('.wd-swiper-video .popup-video').magnificPopup({
+      wd_swiper_slider(swiper_teams, swiper_teams_data);
+
+      var wd_image_gallery = $('.wd-services-image .wd-image-gallery');
+      var wd_image_gallery_data = {
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,2], 
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+            return item.el.attr('title') + '<small>by JWedding</small>';
+          }
+        }
+      }
+      wd_magnific_popup(wd_image_gallery, wd_image_gallery_data);
+
+      var wd_popup_video = $('.wd-swiper-video .popup-video');
+      var wd_popup_video_data = {
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
@@ -204,17 +196,20 @@
           },
         },
         fixedContentPos: false,
-      });
+      };
 
-      $('.wd-menu-icon .btn-menu-icon').magnificPopup({
+      wd_magnific_popup(wd_popup_video, wd_popup_video_data);
+
+      var wd_menu_icon = $('.wd-menu-icon .btn-menu-icon');
+      var wd_menu_data = {
         items: {
           src: '#wd-menu-mobile',
           type: 'inline'
         },
         removalDelay: 300,
         mainClass: 'mfp-fade wd-popup-menu-mobile',
-
-      });
+      }
+      wd_magnific_popup(wd_menu_icon, wd_menu_data);
 
     });
 
