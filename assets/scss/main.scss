@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cormorant Upright","Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Cormorant Upright", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -15,7 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-a{
+a {
     font-family: "Cormorant Upright", sans-serif;
     color: inherit;
 }
@@ -224,7 +224,8 @@ img {
 
         .wd-logo {
             margin-bottom: 16px;
-            img{
+
+            img {
                 width: 200px;
             }
         }
@@ -545,11 +546,13 @@ img {
             .wd-swiper-hero {
                 .swiper-wrapper {
                     .swiper-slide {
-                        .swiper-slide-thumbnail{
+                        .swiper-slide-thumbnail {
                             padding-bottom: 66%;
                         }
+
                         .swiper-slide-content {
                             padding: 15px;
+
                             .swiper-slide-text-box {
                                 .swiper-slide-heading {
                                     font-size: 32px;
@@ -591,9 +594,11 @@ img {
 .wd-introduction-section {
     padding: 100px 0;
     background-color: #1F2334;
-    .wd-heading-box{
+
+    .wd-heading-box {
         margin-bottom: 50px;
     }
+
     .wd-introduction-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -605,7 +610,8 @@ img {
             background: #FFFFFF;
             padding: 24px 20px;
             border-radius: 10px;
-            .wd-image-box-img{
+
+            .wd-image-box-img {
                 width: 100px;
                 height: 100px;
                 display: flex;
@@ -614,21 +620,25 @@ img {
                 margin: 0 auto;
                 border-radius: 50%;
                 border: 1px solid #163967;
-                img{
+
+                img {
                     width: 60px;
                     height: auto;
                 }
             }
-            .wd-image-box-content{
+
+            .wd-image-box-content {
                 margin-top: 20px;
-                .wd-image-box-title{
+
+                .wd-image-box-title {
                     font-size: 30px;
                     line-height: 1.3em;
                     font-weight: 700;
                     margin-top: 0;
                     color: #163967;
                 }
-                .wd-image-box-desc{
+
+                .wd-image-box-desc {
                     font-size: 18px;
                     line-height: 1.6em;
                     font-weight: 500;
@@ -644,14 +654,17 @@ img {
 
     @media(max-width: 1024.98px) {
         padding: 80px 0;
-        .wd-heading-box{
+
+        .wd-heading-box {
             margin-bottom: 40px;
         }
+
         .wd-introduction-wrapper {
             grid-template-columns: repeat(2, 1fr);
+
             .wd-image-box {
-                .wd-image-box-content{
-                    .wd-image-box-title{
+                .wd-image-box-content {
+                    .wd-image-box-title {
                         font-size: 24px;
                     }
                 }
@@ -661,18 +674,22 @@ img {
 
     @media(max-width: 767.98px) {
         padding: 60px 0;
-        .wd-heading-box{
+
+        .wd-heading-box {
             margin-bottom: 30px;
         }
+
         .wd-introduction-wrapper {
             .wd-image-box {
-                .wd-image-box-content{
+                .wd-image-box-content {
                     margin-top: 16px;
-                    .wd-image-box-title{
+
+                    .wd-image-box-title {
                         font-size: 22px;
                         margin-bottom: 12px;
                     }
-                    .wd-image-box-desc{
+
+                    .wd-image-box-desc {
                         font-size: 16px;
                     }
                 }
@@ -718,10 +735,7 @@ img {
 
             .swiper-wrapper {
                 .swiper-slide {
-                    .swiper-slide-inner {
-                        border-radius: 10px;
-                        overflow: hidden;
-                    }
+                    border-radius: 10px;
                 }
             }
         }
@@ -760,10 +774,7 @@ img {
 
         .swiper-wrapper {
             .swiper-slide {
-                .swiper-slide-inner {
-                    border-radius: 10px;
-                    overflow: hidden;
-                }
+                border-radius: 10px;
             }
         }
     }
@@ -907,6 +918,7 @@ img {
 
         .wd-contact-wrap {
             padding: 30px 24px;
+
             .wd-contact {
                 a {
                     font-size: 20px;
@@ -941,6 +953,7 @@ img {
 
     .swiper-wrapper {
         .swiper-slide {
+            overflow: hidden;
             min-height: 220px;
             background: transparent;
             display: -webkit-box;

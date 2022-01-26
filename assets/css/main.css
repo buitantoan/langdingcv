@@ -1,6 +1,6 @@
 *, html { box-sizing: border-box; }
 
-body { margin: 0; padding: 0; font-family: "Cormorant Upright","Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #333333; background-color: #fff; -webkit-font-smoothing: antialiased; }
+body { margin: 0; padding: 0; font-family: "Cormorant Upright", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #333333; background-color: #fff; -webkit-font-smoothing: antialiased; }
 
 a { font-family: "Cormorant Upright", sans-serif; color: inherit; }
 
@@ -127,7 +127,7 @@ img { display: inline-block; height: auto; width: 100%; object-fit: cover; }
 .wd-services-section .wd-services-wrap .wd-popup-gallery a { display: inline-block; }
 .wd-services-section .wd-services-wrap .wd-popup-gallery a img { border-radius: 15px; width: 100%; height: 100%; }
 .wd-services-section .wd-services-wrap .wd-swiper-video { margin-top: 50px; }
-.wd-services-section .wd-services-wrap .wd-swiper-video .swiper-wrapper .swiper-slide .swiper-slide-inner { border-radius: 10px; overflow: hidden; }
+.wd-services-section .wd-services-wrap .wd-swiper-video .swiper-wrapper .swiper-slide { border-radius: 10px; }
 @media (max-width: 1024.98px) { .wd-services-section { padding: 80px 0 40px; }
   .wd-services-section .wd-services-wrap { margin-bottom: 60px; }
   .wd-services-section .wd-services-wrap .wd-popup-gallery { grid-column-gap: 20px; grid-row-gap: 20px; } }
@@ -136,7 +136,7 @@ img { display: inline-block; height: auto; width: 100%; object-fit: cover; }
 
 .wd-payment-section { background-color: #0C0D13; padding: 100px 0; }
 .wd-payment-section .wd-payment-wrap { margin-top: 50px; }
-.wd-payment-section .wd-payment-wrap .swiper-wrapper .swiper-slide .swiper-slide-inner { border-radius: 10px; overflow: hidden; }
+.wd-payment-section .wd-payment-wrap .swiper-wrapper .swiper-slide { border-radius: 10px; }
 @media (max-width: 1024.98px) { .wd-payment-section { padding: 80px 0; } }
 
 .wd-teams-section { padding: 100px 0; background-color: #12141D; }
@@ -167,7 +167,7 @@ img { display: inline-block; height: auto; width: 100%; object-fit: cover; }
   .wd-contact-section .wd-contact-wrap .wd-address { font-size: 18px; } }
 
 .swiper { overflow: hidden; padding-bottom: 40px; margin-left: auto; margin-right: auto; }
-.swiper .swiper-wrapper .swiper-slide { min-height: 220px; background: transparent; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.swiper .swiper-wrapper .swiper-slide { overflow: hidden; min-height: 220px; background: transparent; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
 .swiper .swiper-wrapper .swiper-slide .swiper-slide-inner { width: 100%; height: 100%; }
 .swiper .swiper-wrapper .swiper-slide .swiper-slide-inner .swiper-slide-thumbnail { width: 100%; height: 100%; position: relative; padding-bottom: 66%; }
 .swiper .swiper-wrapper .swiper-slide .swiper-slide-inner img { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
