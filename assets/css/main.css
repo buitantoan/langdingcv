@@ -39,7 +39,7 @@ img { display: inline-block; height: auto; width: 100%; object-fit: cover; }
 .wd-popup-menu-mobile .wd-nav-menu-mobile .wd-menu-mobile-wrap .wd-nav-menu-main ul .menu-item a { display: block; padding: 10px 0; line-height: 1.5; }
 .wd-popup-menu-mobile .wd-nav-menu-mobile .mfp-close { color: #FFFFFF; font-size: 30px; }
 
-.wd-header-section { background-color: #070707; line-height: 1; box-shadow: 0px 1px 0px #191919; position: sticky; top: 0; left: 0; width: 100%; z-index: 99; padding-top: 10px; padding-bottom: 10px; }
+.wd-header-section { background-color: #1F2334; line-height: 1; box-shadow: 0px 1px 0px #191919; position: sticky; top: 0; left: 0; width: 100%; z-index: 99; padding-top: 10px; padding-bottom: 10px; }
 .wd-header-section .wd-container { display: flex; align-items: center; justify-content: space-between; }
 .wd-header-section .wd-container .wd-logo img { display: block; object-fit: cover; width: auto; height: 70px; }
 
